@@ -53,4 +53,8 @@ La base de datos H2 está configurada para arrancar con el proyecto Java. Asegú
 
 ---
 
-Espero que esta versión simplificada del README sea útil para tu proyecto. Si necesitas más detalles o alguna otra ayuda, ¡no dudes en pedirla!
+## Licencia
+Este proyecto es puramente académico.
+
+## Contacto
+Si tienes preguntas o sugerencias, no dudes en ponerte en contacto con Pablo en vallejos_pablo@live.com.
