@@ -86,9 +86,54 @@ npm run dev
 ```
 
 La aplicación estará disponible en `http://localhost:3000`.
+Aquí está la documentación para la API que proporcionaste:
+
+### Rutas HTTP
+#### Obtener Todas las Tareas
+- **Método HTTP:** GET
+- **URL:** /api/persons/
+- **Descripción:** Obtiene todas las tareas registradas.
+
+#### Crear Tarea
+- **Método HTTP:** POST
+- **URL:** /api/persons/
+- **Descripción:** Permite crear una nueva tarea.
+- **Contrato de Solicitud:**
+```json
+{
+  "task": "String"
+}
+```
+- **Respuesta Exitosa:**
+  En caso de éxito, devuelve la tarea creada con los siguientes campos:
+```json
+{
+  "id": "String",
+  "task": "String"
+}
+```
+
+#### Obtener Tarea por ID
+- **Método HTTP:** GET
+- **URL:** /api/persons/{id}
+- **Descripción:** Obtiene una tarea específica según su ID.
+
+#### Actualizar Tarea
+- **Método HTTP:** PATCH
+- **URL:** /api/persons/update
+- **Descripción:** Actualiza la información de una tarea existente.
+
+#### Deshabilitar Tarea
+- **Método HTTP:** DELETE
+- **URL:** /api/persons/{id}/disable
+- **Descripción:** Deshabilita una tarea según su ID.
+
+#### Eliminar Tarea
+- **Método HTTP:** DELETE
+- **URL:** /api/persons/{id}/delete
+- **Descripción:** Elimina permanentemente una tarea según su ID.
 
 ### Nota
 
 Para la funcionalidad completa de la aplicación, asegúrate de tener las dependencias instaladas, incluyendo react-router-dom, react-hook-form, y react-dnd.
 
-¡Espero que esta información sea útil para tu proyecto! Si necesitas más detalles o alguna otra ayuda, ¡no dudes en pedirla!

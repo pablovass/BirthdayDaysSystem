@@ -26,14 +26,18 @@ Este es un microservicio desarrollado en Java con Spring Boot para la creación 
 
 Esta documentación describe los puntos finales de la API de registro y recuperación de usuarios para una aplicación Java Spring Boot 2.7. La API permite la creación de nuevos usuarios y la recuperación de usuarios existentes utilizando tokens JWT para la autenticación.
 
-### Puntos finales
-#### Registro de Usuario
-- **URL:** /sign-up
+- **Persistencia de Datos:**
+    - El usuario se persiste en una base de datos utilizando Spring Data ,Jakarta y H2.
+      ¡Tienes toda la razón! Perdona por eso. Aquí tienes la documentación de las rutas HTTP:
+
+### Rutas HTTP
+#### Crear Usuario
 - **Método HTTP:** POST
-- **Descripción:** Punto final para crear un nuevo usuario.
+- **URL:** /api/persons/
+- **Descripción:** Permite crear un nuevo usuario.
 - **Contrato de Solicitud:**
 ```json
- {
+{
   "id": "String",
   "name": "String",
   "lastName": "String",
@@ -45,27 +49,53 @@ Esta documentación describe los puntos finales de la API de registro y recupera
 }
 ```
 - **Validaciones:**
-    - El correo electrónico debe seguir la expresión regular (aaaaaaa@dominio.com).
-    
+  - El correo electrónico debe seguir la expresión regular (aaaaaaa@dominio.com).
+
 - **Campos Opcionales:**
-    - Nombre y teléfonos son campos opcionales.
+  - Nombre y teléfonos son campos opcionales.
 - **Respuesta Exitosa:**
   En caso de éxito, se devuelve el usuario con los siguientes campos:
 ```json
 {
-  "id": "8222243f-953f-4dde-8541-a7e52cbee8ae",
-  "name": "Andre",
-  "lastName": "Josefa",
-  "birthdate": "2024-02-15",
-  "documentNumber": "33456876",
-  "email": "Josefa-Martinez@live.com",
-  "phone": "12322224567890",
-  "status": "todo"
+  "id": "String",
+  "name": "String",
+  "lastName": "String",
+  "birthdate": "String",
+  "documentNumber": "String",
+  "email": "String",
+  "phone": "String",
+  "status": "String"
 }
 ```
 - **Persistencia de Datos:**
-    - El usuario se persiste en una base de datos utilizando Spring Data ,Jakarta y H2.
-     
+  - El usuario se persiste en una base de datos utilizando Spring Data, Jakarta y H2.
+
+#### Obtener Todos los Usuarios
+- **Método HTTP:** GET
+- **URL:** /api/persons/
+- **Descripción:** Obtiene todos los usuarios registrados.
+
+#### Obtener Usuario por ID
+- **Método HTTP:** GET
+- **URL:** /api/persons/{id}
+- **Descripción:** Obtiene un usuario específico según su ID.
+
+#### Actualizar Usuario
+- **Método HTTP:** PATCH
+- **URL:** /api/persons/update
+- **Descripción:** Actualiza la información de un usuario existente.
+
+#### Deshabilitar Usuario
+- **Método HTTP:** DELETE
+- **URL:** /api/persons/{id}/disable
+- **Descripción:** Deshabilita un usuario según su ID.
+
+#### Eliminar Usuario
+- **Método HTTP:** DELETE
+- **URL:** /api/persons/{id}/delete
+- **Descripción:** Elimina permanentemente un usuario según su ID.
+
+¡Espero que esta documentación sea más útil para ti!    
 ## Contribución
 Si deseas contribuir a este proyecto, sigue estos pasos:
 1. Haz un fork del repositorio.
