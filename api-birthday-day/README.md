@@ -1,5 +1,4 @@
 # Microservicio de Gestión de Usuarios
-PROYECTO 100% ACADEMICO.
 
 Este es un microservicio desarrollado en Java con Spring Boot para la creación y recuperación de usuarios. Permite a los usuarios registrarse, iniciar sesión y acceder a su información.
 
