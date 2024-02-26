@@ -1,6 +1,6 @@
-# Microservicio de Gestión de Usuarios
+# api-birthday-day
 
-Este es un microservicio desarrollado en Java con Spring Boot para la creación y recuperación de usuarios. Permite a los usuarios registrarse, iniciar sesión y acceder a su información.
+Este es un microservicio desarrollado en Java con Spring Boot para la creación y recuperación de usuarios. Permite registrar personas, cargarle informacion adicional pos carga,  acceder a su información entre otras casuiticas que se describen luego.
 
 
 ## Características Clave
