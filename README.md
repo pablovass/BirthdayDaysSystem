@@ -3,8 +3,10 @@
 Este repositorio contiene un sistema de gestión de cumpleaños llamado BirthdayDaysSystem, compuesto por una aplicación frontend desarrollada con React 18.2.0 y Vite 5.1.4, junto con una API backend desarrollada en Java 17 con Spring Boot 3.1.8. La aplicación frontend utiliza librerías como Tailwind CSS y dndkit para funcionalidades específicas.
 
 ## Enlaces útiles
-- [Documentación del proyecto ReactJs]([[URL_del_archivo_o_página](https://raw.githubusercontent.com/pablovass/BirthdayDaysSystem/main/api-birthday-day/README.md](https://github.com/pablovass/BirthdayDaysSystem/tree/main/api-birthday-day#readme)
-- [Documentación del proyecto Java]([URL_del_archivo_o_página](https://github.com/pablovass/BirthdayDaysSystem/blob/main/app-react-birthday/README.md))
+## Enlaces útiles
+- [Documentación del proyecto ReactJs](https://github.com/pablovass/BirthdayDaysSystem/blob/main/app-react-birthday/README.md)
+- [Documentación del proyecto Java](https://github.com/pablovass/BirthdayDaysSystem/blob/main/api-birthday-day/README.md)
+
 
 ## Requerimientos de Instalación
 
