@@ -1,10 +1,10 @@
-Aquí está el README mejorado y sin partes repetidas:
-
----
-
 # BirthdayDaysSystem
 
 Este repositorio contiene un sistema de gestión de cumpleaños llamado BirthdayDaysSystem, compuesto por una aplicación frontend desarrollada con React 18.2.0 y Vite 5.1.4, junto con una API backend desarrollada en Java 17 con Spring Boot 3.1.8. La aplicación frontend utiliza librerías como Tailwind CSS y dndkit para funcionalidades específicas.
+
+## Enlaces útiles
+- [Documentación del proyecto Java](URL_del_archivo_o_página)
+- [Documentación del proyecto Java](URL_del_archivo_o_página)
 
 ## Requerimientos de Instalación
 
@@ -50,10 +50,6 @@ Este repositorio contiene un sistema de gestión de cumpleaños llamado Birthday
 ### Nota
 
 La base de datos H2 está configurada para arrancar con el proyecto Java. Asegúrate de tener el programa Java ejecutándose para interactuar con el frontend.
-
-## Enlaces útiles
-
-- [Documentación del proyecto Java](URL_del_archivo_o_página)
 
 ---
 
